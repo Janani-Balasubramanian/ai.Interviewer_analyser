@@ -1,3 +1,32 @@
+<p align="center"><img src=".github/repository-banner.svg" alt="Interview Performance Analyzer — Practice, reflect, and improve" width="100%" /></p>
+
+<p align="center"><a href="https://github.com/Janani-Balasubramanian">GitHub profile</a> · <a href="https://github.com/Janani-Balasubramanian/portfolio">Portfolio</a> · <a href="https://github.com/Janani-Balasubramanian/ai.Interviewer_analyser/issues">Issues</a></p>
+
+# Interview Performance Analyzer
+
+A full-stack mock-interview practice MVP with account access, domain tracks, experience tiers, interview reports, progress history, and a credit-based practice flow.
+
+## Project at a glance
+
+| Layer | Implementation |
+| --- | --- |
+| Frontend | React, TypeScript, Vite, React Router |
+| Backend | FastAPI, SQLAlchemy, Pydantic |
+| Scoring | Mock scoring by default, with optional LLM scoring |
+| Main screens | Login, registration, dashboard, interview, report |
+
+## Scoring behavior
+
+The default scorer uses answer-length heuristics and randomized values. Optional LLM scoring is implemented in `backend/app/services/scoring.py`; it falls back to mock scoring when the provider call fails. Treat reports as practice feedback, not a validated assessment of ability or suitability for employment.
+
+## Start locally
+
+Use the backend and frontend instructions in the preserved guide below. The frontend's declared dependencies already include Axios and React Router, so a separate installation of those packages is unnecessary after installing the manifest.
+
+---
+
+## Detailed project guide
+
 # AI-Based Interview Performance Analyzer
 
 Full-stack MVP for practicing mock interviews with AI scoring, free-tier limits, gamified credit system, experience tiers, and domain tracks.
